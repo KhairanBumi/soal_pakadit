@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Soal 8 - Tarif Parkir</title>
+  <style>body { font-family: Arial, sans-serif; padding: 30px; }</style>
+</head>
+<body>
+  <h1>Soal 8 - Tarif Parkir</h1>
+  <div id="hasil"></div>
+  <script>
+    const jenisKendaraan = "Mobil";
+    let tarif;
+
+    if (jenisKendaraan === "Mobil") {
+      tarif = "Tarif Parkir: Rp 5.000 / jam";
+    } else if (jenisKendaraan === "Motor") {
+      tarif = "Tarif Parkir: Rp 2.000 / jam";
+    } else {
+      tarif = "Jenis kendaraan tidak dikenali";
+    }
+
+    document.getElementById("hasil").textContent = tarif;
+  </script>
+</body>
+</html>

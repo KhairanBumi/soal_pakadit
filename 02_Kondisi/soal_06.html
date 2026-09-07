@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Soal 6 - Dark Mode</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; }
+    #container { padding: 30px; border-radius: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Soal 6 - Mode Tampilan Layar</h1>
+  <div id="container">Contoh kontainer utama</div>
+  <script>
+    const isDarkMode = true;
+    const container = document.getElementById("container");
+
+    container.style.backgroundColor = isDarkMode ? "#121212" : "#FFFFFF";
+    container.style.color = isDarkMode ? "#FFFFFF" : "#000000";
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Soal 9 - Stok Barang</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; }
+    .hijau { color: green; font-weight: bold; }
+    .oranye { color: orange; font-weight: bold; }
+    .merah { color: red; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Soal 9 - Ketersediaan Stok</h1>
+  <div id="hasil"></div>
+  <script>
+    const stokBarang = 7;
+    let status;
+    let kelas;
+
+    if (stokBarang > 10) {
+      status = "Stok Tersedia";
+      kelas = "hijau";
+    } else if (stokBarang >= 1) {
+      status = "Stok Terbatas! Segera Beli";
+      kelas = "oranye";
+    } else {
+      status = "Stok Habis";
+      kelas = "merah";
+    }
+
+    document.getElementById("hasil").innerHTML = `<span class="${kelas}">${status}</span>`;
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Soal 3 - Status Login</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; }
+    button { padding: 10px 16px; }
+  </style>
+</head>
+<body>
+  <h1>Soal 3 - Status Login</h1>
+  <div id="hasil"></div>
+  <script>
+    const isLoggedIn = true;
+    const namaUser = "Budi";
+
+    document.getElementById("hasil").innerHTML = isLoggedIn
+      ? `<p>Halo, ${namaUser}!</p>`
+      : `<button>Silakan Login Terlebih Dahulu</button>`;
+  </script>
+</body>
+</html>

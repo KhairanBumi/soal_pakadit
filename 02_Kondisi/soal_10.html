@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Soal 10 - Rekomendasi Film</title>
+  <style>body { font-family: Arial, sans-serif; padding: 30px; }</style>
+</head>
+<body>
+  <h1>Soal 10 - Kategori Film</h1>
+  <div id="hasil"></div>
+  <script>
+    const usiaPenonton = 16;
+    let kategori;
+
+    if (usiaPenonton < 13) {
+      kategori = "Kategori: Semua Umur (SU)";
+    } else if (usiaPenonton <= 17) {
+      kategori = "Kategori: Remaja (R)";
+    } else {
+      kategori = "Kategori: Dewasa (D)";
+    }
+
+    document.getElementById("hasil").textContent = kategori;
+  </script>
+</body>
+</html>

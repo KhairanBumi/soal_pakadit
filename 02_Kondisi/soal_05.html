@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Soal 5 - Status Toko</title>
+  <style>body { font-family: Arial, sans-serif; padding: 30px; }</style>
+</head>
+<body>
+  <h1>Soal 5 - Status Keaktifan Toko</h1>
+  <div id="hasil"></div>
+  <script>
+    const jamSekarang = 19;
+    const statusToko = jamSekarang >= 8 && jamSekarang <= 17
+      ? "Toko Buka"
+      : "Toko Tutup";
+
+    document.getElementById("hasil").textContent = statusToko;
+  </script>
+</body>
+</html>

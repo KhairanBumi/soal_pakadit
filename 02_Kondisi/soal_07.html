@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Soal 7 - Validasi Password</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Soal 7 - Validasi Password</h1>
+  <div id="hasil"></div>
+  <script>
+    const password = "1234";
+
+    password.length < 6 &&
+      (document.getElementById("hasil").innerHTML =
+        '<span class="error">Password terlalu pendek (minimal 6 karakter)</span>');
+  </script>
+</body>
+</html>

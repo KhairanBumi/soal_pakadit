@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Soal 2 - Peringatan Cuaca</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; }
+    #peringatan { display: none; padding: 15px; background: #ffe0e0; border: 1px solid #f00; }
+  </style>
+</head>
+<body>
+  <h1>Soal 2 - Peringatan Cuaca Panas</h1>
+  <div id="peringatan">Peringatan: Cuaca Sangat Panas Hari Ini!</div>
+  <script>
+    const suhuUdara = 36;
+    suhuUdara > 35 && (document.getElementById("peringatan").style.display = "block");
+  </script>
+</body>
+</html>
